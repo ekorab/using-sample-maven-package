@@ -29,8 +29,8 @@
   <servers>
     <server>
       <id>github</id>
-      <username>ekorab</username>
-      <password>${TOKEN}</password>
+      <username>${env.USER_PACKAGE_READ}</username>
+      <password>${env.TOKEN_PACKAGE_READ}</password>
     </server>
   </servers>
 </settings>

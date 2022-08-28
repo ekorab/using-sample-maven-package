@@ -22,5 +22,8 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         cache: maven
-    - name: Build with Maven
-      run: mvn -s settings.xml clean install
+    - name: Build Package
+      env:
+        USER_PACKAGE_READ: ${{ secrets.USER_PACKAGE_READ }}
+        TOKEN_PACKAGE_READ: ${{ secrets.TOKEN_PACKAGE_READ }}
+      run: mvn -B --settings settings.xml clean package --file pom.xml -DskipTests

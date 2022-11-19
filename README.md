@@ -3,6 +3,7 @@
 project to consume packages from github registry
 
 right now consuming [this project](https://github.com/ekorab/sample-maven-package)
+![main status](https://github.com/github/docs/actions/workflows/maven.yml/badge.svg)
 
 ## building
 
